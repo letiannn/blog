@@ -1,0 +1,9 @@
+[submodule "blog/components/d2s"]
+	path = blog/components/d2s
+	url = https://github.com/letiannn/d2s.git
+[submodule "blog/components/ebus"]
+	path = blog/components/ebus
+	url = https://github.com/letiannn/ebus.git
+[submodule "blog/components/qsm"]
+	path = blog/components/qsm
+	url = https://github.com/letiannn/qsm.git

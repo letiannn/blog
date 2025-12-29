@@ -1,0 +1,6 @@
+*.c
+*.h
+*.dbc
+*.py
+*.j2
+SConscript*
