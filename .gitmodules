@@ -7,3 +7,6 @@
 [submodule "blog/components/qsm"]
 	path = blog/components/qsm
 	url = https://github.com/letiannn/qsm.git
+[submodule "blog/components/mmgr"]
+	path = blog/components/mmgr
+	url = https://github.com/letiannn/mmgr.git

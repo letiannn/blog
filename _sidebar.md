@@ -8,9 +8,9 @@
 
 - [**组件相关**](blog/components/readme.md)
   - [**D2S**](blog/components/d2s/readme.md)
-  - [**QSM**](blog/components/qsm/readme.md)
   - [**EBUS**](blog/components/ebus/readme.md)
- 
+  - [**MMGR**](blog/components/mmgr/readme.md)
+  - [**QSM**](blog/components/qsm/readme.md)
 
 - [**系统相关**](blog/os/readme.md)
   - [**freertos**](blog/os/free/readme.md)
