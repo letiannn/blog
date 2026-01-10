@@ -1,6 +1,6 @@
 <!-- docs/_sidebar.md -->
 
-- [**简介**](README.md)
+- [**简介**](readme.md)
 
 - [**芯片相关**](blog/chip/readme.md)
   - [**AT32**](blog/chip/at32/readme.md)
@@ -8,9 +8,9 @@
 
 - [**组件相关**](blog/components/readme.md)
   - [**D2S**](blog/components/d2s/readme.md)
-  - [**EBUS**](blog/components/ebus/readme.md)
-  - [**MMGR**](blog/components/mmgr/readme.md)
-  - [**QSM**](blog/components/qsm/readme.md)
+  - [**EBUS**](blog/components/ebus/README.md)
+  - [**MMGR**](blog/components/mmgr/README.md)
+  - [**QSM**](blog/components/qsm/README.md)
 
 - [**系统相关**](blog/os/readme.md)
   - [**freertos**](blog/os/free/readme.md)
