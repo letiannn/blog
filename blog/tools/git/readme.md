@@ -22,20 +22,18 @@
 ### 提交示例
 
 ```bash
-# 添加新功能
-git commit -m "feat: 支持嵌套状态机"
-
-# 修复问题
-git commit -m "fix: 修复状态机销毁时内存池未释放的问题"
-
-# 更新文档
-git commit -m "docs: 补充 API 使用说明"
-
-# 代码重构
-git commit -m "refactor: 将 QsmMgr 移至独立文件"
-
-# 性能优化
-git commit -m "perf: 使用静态内存池替代动态分配"
+# 添加文件到git仓库
+git add . 
+# 提交更改并添加提交信息
+git commit -m "add ebus submodule and docs" 
+# 切换到main分支
+git branch -M main 
+ # 添加远程仓库
+git remote add origin git@github.com:letiannn/doc.git
+# 推送到远程仓库
+git push -u origin main 
+#或者
+git push --set-upstream origin main
 ```
 
 ## 拉去更新子仓库的
@@ -50,3 +48,39 @@ git submodule update --init --recursive
 #所有子模块更新到最新版本
 git submodule update --remote
 ```
+
+## 关于子模块的使用
+
+- 新建工程后如何添加子模块？
+
+```bash
+# 初始化git仓库
+git init 
+# git submodule add https://github.com/letiannn/mmgr.git blog/components/mmgr
+git submodule add <url> <directory> 
+
+```
+
+- 修改子模块后如何更新同步到主子仓库？
+
+```bash
+#在主子模块都执行如下内容
+git add .
+
+git commit -m "update ebus"
+
+git push
+```
+
+
+## 代码恢复
+
+```bash
+git reflog  # 查看git操作记录
+
+git reset --soft HEAD~1 # 撤销一个commit (保留修改)
+git reset --hard HEAD~1 # 撤销一个commit (丢弃修改)
+```
+
+
+
