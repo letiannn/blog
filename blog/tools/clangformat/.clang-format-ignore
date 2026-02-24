@@ -1,0 +1,9 @@
+# .clang-format-ignore
+# clang-format ignore file
+/hc32f460/hc32f460/
+/hc32f460/mcu/business
+/hc32f460/mcu/framework
+/hc32f460/mcu/project
+/hc32f460/mcu/rte_component
+/hc32f460/mcu/sdk
+/hc32f460/mcu/third_party
