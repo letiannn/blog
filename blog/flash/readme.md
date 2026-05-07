@@ -1,0 +1,8 @@
+# flash
+
+## nor
+
+
+## nand
+
+

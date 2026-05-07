@@ -83,4 +83,129 @@ git reset --hard HEAD~1 # 撤销一个commit (丢弃修改)
 ```
 
 
+## 其他文件
+
+[.gitxxxx文件介绍](https://geek-docs.com/git/git-questions/154_git_what_are_all_available_git_special_files_that_can_be_committed_to_a_repository.html)
+
+- .gitattributes
+文件用于配置特定文件或路径的属性，如换行符的处理、文件形式的修改等。该文件中可以定义一系列的属性，以控制 Git 在提交和合并文件时进行特定的操作。
+
+```
+*.c linguist-language=C
+*.C linguist-language=C
+*.h linguist-language=C
+*.H linguist-language=C
+
+* text=auto
+
+*.S text
+*.asm text
+*.c text
+*.cc text
+*.cpp text
+*.cxx text
+*.h text
+*.htm text
+*.html text
+*.in text
+*.ld text
+*.m4 text
+*.mak text
+*.mk text
+*.py text
+*.rb text
+*.s text
+*.sct text
+*.sh text
+*.txt text
+*.xml text
+SConscript text
+Makefile text
+AUTHORS text
+COPYING text
+
+*.LZO -text
+*.Opt -text
+*.Uv2 -text
+*.ewp -text
+*.eww -text
+*.vcproj -text
+*.bat -text
+*.dos -text
+*.icf -text
+*.inf -text
+*.ini -text
+*.sct -text
+*.xsd -text
+Jamfile -text
+
+```
+
+- .gitignore
+
+```
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# debug information files
+*.dwo
+
+# ignore rtt sdk
+/rt-thread/
+/build/
+__pycache__/
+.sconsign.dblite
+
+```
+
 
